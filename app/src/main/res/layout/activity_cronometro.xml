@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cronometro">
+
+    <TextView
+        android:id="@+id/textoContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="111dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#0000FF"
+        android:text="PLAY"
+        android:textSize="20dp"
+        android:onClick="ejecutarHilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FF8000"
+        android:text="RECORD"
+        android:textSize="15dp"
+        android:onClick="añadirRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPausa"
+        android:layout_width="144dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="#008F39"
+        android:text="PAUSA"
+        android:textSize="15dp"
+        android:onClick="pausarHilo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="405dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="329dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="386dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

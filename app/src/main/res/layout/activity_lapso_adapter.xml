@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LapsoAdapter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeroTiempo"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="numeroTiempo"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/unidadTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="unidad de tiempo"
+        android:textSize="19dp" />
+</LinearLayout>
